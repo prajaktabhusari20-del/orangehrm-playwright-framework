@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-24T12:54:20 IST" name="Default suite" finished-at="2026-06-24T12:55:18 IST" duration-ms="58679">
+  <suite started-at="2026-06-25T13:56:07 IST" name="Default suite" finished-at="2026-06-25T13:56:49 IST" duration-ms="41216">
     <groups>
     </groups>
-    <test started-at="2026-06-24T12:54:20 IST" name="Default test" finished-at="2026-06-24T12:55:18 IST" duration-ms="58679">
-      <class name="tests.PIMTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PIMTest@6adbc9d]" started-at="2026-06-24T12:54:20 IST" name="setUp" finished-at="2026-06-24T12:54:57 IST" duration-ms="36966" status="PASS">
+    <test started-at="2026-06-25T13:56:07 IST" name="Default test" finished-at="2026-06-25T13:56:49 IST" duration-ms="41216">
+      <class name="tests.EditEmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.EditEmployeeTest@42a48628]" started-at="2026-06-25T13:56:07 IST" name="setUp" finished-at="2026-06-25T13:56:29 IST" duration-ms="21802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAddEmployee()[pri:0, instance:tests.PIMTest@6adbc9d]" started-at="2026-06-24T12:54:57 IST" name="verifyAddEmployee" finished-at="2026-06-24T12:55:17 IST" duration-ms="20252" status="PASS">
+        <test-method signature="verifyEditEmployee()[pri:0, instance:tests.EditEmployeeTest@42a48628]" started-at="2026-06-25T13:56:29 IST" name="verifyEditEmployee" finished-at="2026-06-25T13:56:48 IST" duration-ms="18467" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddEmployee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMTest@6adbc9d]" started-at="2026-06-24T12:55:17 IST" name="tearDown" finished-at="2026-06-24T12:55:18 IST" duration-ms="1374" status="PASS">
+        </test-method> <!-- verifyEditEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditEmployeeTest@42a48628]" started-at="2026-06-25T13:56:48 IST" name="tearDown" finished-at="2026-06-25T13:56:49 IST" duration-ms="881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.PIMTest -->
+      </class> <!-- tests.EditEmployeeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
