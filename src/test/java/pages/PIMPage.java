@@ -16,10 +16,31 @@ public class PIMPage {
 	
 	private String employeeNameSearch = "//label[text()='Employee Name']/../following-sibling::div//input";
 	private String searchButton ="button[type='submit']";
-private String employeeRow =".oxd-table-card";
-private String lastNameSTextbox ="input[name='lastName']";
-private String saveSButton ="button[type='submit']";
+    private String employeeRow =".oxd-table-card";
+    private String lastNameSTextbox ="input[name='lastName']";
+    private String saveSButton ="button[type='submit']";
+    
+    private String employeeCheckbox=".oxd-table-card .oxd-checkbox-input";
+    private String deleteButton="button:has-text('Delete')";
+    private String confirmDeleteButton="button:has-text('Yes, Delete')";
+    private String successToast =".oxd-toast";
+    
+    public void selectEmployee() {
+    	page.locator(employeeCheckbox).first().click();
+    }
+    
+    public void deleteEmployee() {
+    	page.locator(deleteButton).click();
+    	page.locator(confirmDeleteButton).click();
+    }
 	
+    public boolean isDeleteSucceful() {
+    	page.locator(successToast).waitFor();
+    	
+    	return page.locator(successToast).textContent().contains("Successfully Deleted");
+    }
+
+
 	public void clickPIM() {
 		page.locator(pimMenu).click();
 	}
